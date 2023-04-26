@@ -1,0 +1,84 @@
+.ratings__info svg {
+  margin-top: 0.2rem;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.ratings__info {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings__info p {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.grid p {
+  font-size: 1.1rem;
+}
+
+.grid svg {
+  font-size: 1rem;
+}
+
+@media (max-width: 75em) {
+  .home p {
+    font-size: 1.2rem;
+  }
+
+  .home svg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .home p {
+    font-size: 1.2rem;
+  }
+
+  .home svg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .home p {
+    font-size: 1.2rem;
+  }
+
+  .home svg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .grid p {
+    font-size: 1.2rem;
+  }
+
+  .grid svg {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .grid p {
+    font-size: 1.3rem;
+  }
+
+  .grid svg {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .grid p {
+    font-size: 1.2rem;
+  }
+  .grid svg {
+    font-size: 1.2rem;
+  }
+}

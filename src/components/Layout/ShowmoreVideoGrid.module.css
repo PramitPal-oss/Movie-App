@@ -1,0 +1,22 @@
+.showmore--videogrid {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+  overflow: hidden;
+}
+
+.showmore--videogrid h2 {
+  margin-top: 1rem;
+  overflow-wrap: break-word;
+}
+.iframe {
+  border: none;
+}
+
+@media (max-width: 37.5em) {
+  .showmore--videogrid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}

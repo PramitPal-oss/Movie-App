@@ -1,0 +1,51 @@
+.genre-container {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.genre-container button {
+  margin-right: 2rem;
+  min-width: 5rem;
+  /*padding: 0.5rem 1rem; */
+  padding: 0.5rem 0.2rem;
+  border: none;
+  background-color: red;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.3rem;
+}
+
+button.active {
+  background-color: rgb(65, 98, 168);
+  color: #fff;
+}
+
+.genre-container button:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 75em) {
+  .genre-container button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .genre-container button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .genre-container button {
+    font-size: 1.5rem;
+  }
+}

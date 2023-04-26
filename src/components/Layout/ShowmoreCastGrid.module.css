@@ -1,0 +1,33 @@
+.showmore--castgrid {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  overflow: hidden;
+}
+.showmore--castgrid__container {
+  transition: 0.3s;
+  border-radius: 0.3rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.showmore--castgrid__container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.showmore--castgrid__container h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 37.5em) {
+  .showmore--castgrid {
+    grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  }
+}

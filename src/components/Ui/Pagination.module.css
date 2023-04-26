@@ -1,0 +1,105 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 20%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: red;
+  color: #fff;
+  /* box-shadow: 0px 5px 5px -2px rgba(247, 245, 245, 0.685); */
+  letter-spacing: 1.5px;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.btn span {
+  margin-left: 0.5rem;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #dc2f02;
+  z-index: -1;
+  box-shadow: 0 0 5px #dc2f02, 0 0 10px #dc2f02, 0 0 20px #dc2f02,
+    0 0 8px #dc2f02, 0 0 8px #dc2f02;
+  transition: 0.25s;
+}
+.btn:hover::before {
+  width: 100%;
+}
+
+.pagination svg {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 75em) {
+  .pagination .btn {
+    padding: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .pagination svg {
+    font-weight: 600;
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .pagination .btn {
+    padding: 0.6rem;
+    font-size: 1.9rem;
+    width: 30%;
+  }
+  .pagination svg {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .pagination .btn {
+    padding: 0.3rem;
+    font-size: 1.8rem;
+    width: 40%;
+  }
+  .pagination svg {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .pagination .btn {
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    width: 45%;
+  }
+  .pagination svg {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}

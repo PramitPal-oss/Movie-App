@@ -1,0 +1,256 @@
+.detail-banner {
+  margin-top: 0.5rem;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.detail-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000000, 0.6);
+}
+
+.detail-banner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, #0f0f0f, #0000);
+}
+
+.movie-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  position: relative;
+  padding: 0 2rem;
+}
+
+/*.container {
+  max-width: 103.75rem;
+} */
+.movie-content__poster {
+  flex: 1;
+}
+
+.movie-content__poster__img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  padding-top: 165%;
+  margin-bottom: 2rem;
+}
+
+.movie-content__info {
+  width: 70%;
+  padding-left: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+.movie-content__info .title {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.movie__overview {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.movie-content__info .genres {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 1rem;
+}
+
+.genres__item {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #0f0f0f;
+  margin-right: 0.5rem;
+}
+
+.casts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 20px;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.casts__item__img {
+  padding-top: 160px;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+
+.casts__item__name {
+  font-size: 0.8rem;
+}
+
+.video {
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.video__info {
+  margin-bottom: 1.5rem;
+}
+
+.video__info h2 {
+  margin-bottom: 1rem;
+}
+
+.iframe {
+  border: none;
+  /* box-shadow: 2px 0px 6px 0px rgb(207, 203, 203); */
+}
+
+@media (max-width: 75em) {
+  .casts__item__name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .genres__item {
+    font-size: 1.5rem;
+  }
+
+  .section__header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .movie__overview {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .detail-banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 48.125em) {
+  .movie-content__poster__img {
+    display: none;
+  }
+
+  .genres {
+    width: 100%;
+  }
+
+  .movie-content__poster {
+    display: none;
+  }
+
+  .movie-content__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .cast {
+    width: 100%;
+  }
+
+  .casts__item__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .genres__item {
+    font-size: 1.5rem;
+    /*margin-left: 1rem; */
+  }
+
+  .section__header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .movie__overview {
+    font-size: 1.8rem;
+  }
+
+  .casts__item__img {
+    width: 100%;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    background-size: contain;
+  }
+  .iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .movie-content__poster__img {
+    display: none;
+  }
+
+  .movie-content__poster {
+    display: none;
+  }
+
+  .movie-content__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .cast {
+    width: 100%;
+  }
+
+  .casts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .iframe {
+    width: 315px;
+    height: 400px;
+  } */
+}

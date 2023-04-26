@@ -1,0 +1,50 @@
+.logo {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  color: red;
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+}
+
+.logo--heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: red;
+}
+
+.logo--heading__span {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 75em) {
+  .logo--heading {
+    font-size: 3rem;
+  }
+  .logo--heading__span {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .logo--heading {
+    font-size: 3.5rem;
+  }
+  .logo--heading__span {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .logo--heading {
+    font-size: 4rem;
+  }
+  .logo--heading__span {
+    font-size: 4.5rem;
+  }
+}

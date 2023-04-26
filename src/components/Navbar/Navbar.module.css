@@ -1,0 +1,124 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  column-gap: 2rem;
+  background-color: transparent;
+  /* box-shadow: 0px 5px 5px -2px rgba(247, 245, 245, 0.685); */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navlists {
+  display: flex;
+  width: 100%; /*50%; */
+  align-items: center;
+  justify-content: space-between;
+  /* New Css */
+  margin-left: 3rem;
+}
+
+.navlink {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.navlink:hover {
+  color: red;
+}
+
+.activeNav {
+  border-bottom: 2px solid red;
+}
+/*
+.logo h2 span {
+  font-size: 3rem;
+} */
+.hamburger-menu {
+  display: flex;
+  display: none;
+  padding: 0.2rem 0.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.hamburger-menu svg {
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
+}
+
+.hamburger-menu .icon-close {
+  display: none;
+}
+
+.mobileNavigation {
+  display: none;
+}
+
+@media (max-width: 75em) {
+  .navlists .navlink {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .navlists .navlink {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktopNavigation {
+    display: none;
+  }
+  .mobileNavigation {
+    display: block;
+  }
+
+  .navbar {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navlists {
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    left: -20px;
+    background-color: rgba(15, 15, 15, 0.788);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 0rem 2rem;
+  }
+
+  .navlists .navlink,
+  .navlists form {
+    background-color: rgba(26, 25, 25, 0.616);
+    /* background-color: rgba(102, 51, 153, 0.753); */
+    border-radius: 1rem;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .navlists .navlink {
+    font-size: 2.5rem;
+  }
+
+  .navlists form {
+    align-self: center;
+    justify-self: center;
+  }
+}
